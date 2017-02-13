@@ -1,2 +1,27 @@
-# mycodec
-为理解ffmpeg所写的小型转码器
+#+TITLE: Codec
+#+AUTHOR: estling
+#+DATE: <2017-02-13 Mon>
+
+* What is it
+I create this project for better understand of ffmpeg.
+
+* Requirement
+  - x264
+  - x265
+  - ffmpeg
+
+* Usage
+  Main process is as following.
+  #+BEGIN_SRC c
+  setInputParam("1.h264", AV_CODEC_ID_H264);
+  setOutputParam("1.hevc", AV_CODEC_ID_HEVC);
+  transcode();  
+  #+END_SRC
+
+
+* More
+The code is easy understanding, please found more explantion in comment of my code.
+
+* Reference
+1. [[https://github.com/yinwenjie/FFmpeg_Tutorial][ffmpeg tutorial]]
+2. [[http://blog.csdn.net/leixiaohua1020/article/details/15811977][FFMPEG 视音频编解码零基础学习方法]]
